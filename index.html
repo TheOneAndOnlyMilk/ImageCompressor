@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Compression</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Compression</h1>
+    <div class="form-container">
+      <input type="file" id="file-input" class="file-input" accept="image/*">
+      <input type="number" id="compression-input" class="compression-input" placeholder="Compression Level (0-100)">
+      <button id="compress-btn" class="compress-btn">Compress Image</button>
+    </div>
+
+    <div class="image-container">
+      <div class="image-box">
+        <h2>Original Image</h2>
+        <img id="original-image" alt="Original Image" class="image">
+        <div id="original-info" class="image-info"></div>
+      </div>
+
+      <div class="image-box">
+        <h2>Compressed Image</h2>
+        <img id="compressed-image" alt="Compressed Image" class="image">
+        <div id="compressed-info" class="image-info"></div>
+        <a id="download-link" class="download-link" download>Download Compressed Image</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
